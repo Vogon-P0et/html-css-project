@@ -3,12 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} 
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
 }
+
 body {
-    margin: 0;
     font-family: "noto sans", sans-serif;
     color: black;
     background-color: #FFF2DB;
+    min-width: 100vh;
 }
 
 .noto-sans-body {
@@ -16,44 +22,64 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings; "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
+
+/* .noto-sans-body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+} */
 
 main {
     margin: 2rem;
 }
+
+:root {
+    --bg-color: rgb(255, 242, 219);
+    --footer-color: rgb(0, 48, 146);
+    --primary-color: rgb(0, 135, 158);
+    --secondary-color: rgb(255, 171, 91);
+    --main-text-color: rgb(0,0,0);
+}
+
 /* End Global attributes */
 
 
 /* Start Header */
-.flex-nav {
+nav {
     display: flex;
-    justify-content: right;
-    padding: 2.2rem;
-    gap: 4rem;
-    background-color: #00879E;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    width: 100%; 
 }
 
-.flexbox-nav {
+.logo img {
+    min-height: 80px;
+    max-height: 120px;
+}
+
+.spacer {
+    flex: .9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
     gap: 2rem;
 }
 
-.site-logo img {
-    position: absolute;
-    left: 1rem;
-    top: .7rem;
-    width: 10rem;
-}
-.flexbox-nav a {
+nav ul li a {
+    color: var(--bg-color);
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: black;
-    text-shadow: 0px 1px 25px #ffab5b;
 }
 
-.flexbox-nav a:hover {
-    color: white;
+nav ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .hero-section {
@@ -61,6 +87,7 @@ main {
     justify-content: right;
     background-color: #FFAB5B;
     align-items: center;
+    min-width: 100%;
 }
 
 .hero-img img{
@@ -75,7 +102,7 @@ main {
 .hero-title {
     flex: 2;
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(1rem, 20vw, 2rem);
     text-shadow: 1px 1px 10px rgb(0, 135, 158, 0.2) ;
 }
 
@@ -99,6 +126,19 @@ footer {
     padding: .2rem;
     margin: 1rem; 
 }
+
+.footer-map iframe {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .quick-links h4 {
     color: #FFAB5B;
@@ -131,12 +171,6 @@ footer {
     border-radius: 4px;
 }
 
-.footer-map {
-    padding: .2rem;
-    margin: 1rem;
-    border-radius: 1rem;
-}
-
 .disclaimer {
     text-align: center;
     grid-column: span 3;
@@ -154,6 +188,8 @@ footer {
     gap: 1.2rem;
     margin: 1.5rem;
     padding-top: 3rem;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .event-item {
@@ -182,6 +218,7 @@ footer {
     border-radius: .5rem;
     box-shadow: 2px 2px 10px rgba(0, 135, 158, 0.2);
 }
+
 /* End Events Page */
 
 
@@ -190,6 +227,10 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 1.5rem;
+}
+
+@media (min-width:300px) and (max-width:480px) {
+    .menu-images {flex-direction: column;};
 }
 
 .menu-images img {
@@ -306,7 +347,6 @@ footer {
 }
 
 .events-teaser .event-item {
-    object-fit: scale-down;
     width: 50%;
     padding: 2rem;
     font-size: 1.2rem;

@@ -1,12 +1,4 @@
-Color Palette
-#343131
-rgb(52, 49, 49)
-#A04747
-rgb(160, 71, 71)
-#D8A25E
-rgb(216, 162, 94)
-#EEDF7A
-rgb(238, 223, 122)
+
 
 
 
@@ -32,3 +24,9 @@ Color Palette: https://colorhunt.co/palette/00309200879effab5bfff2db
 Ocean logo
 https://www.creativefabrica.com/search/?query=ocean%20logo&page=21
 
+
+
+
+
+Responsiveness testing:
+1200-1600 no layout issues
