@@ -25,7 +25,6 @@ main {
 /* End Global attributes */
 
 
-
 /* Start Header */
 .flex-nav {
     display: flex;
@@ -76,7 +75,7 @@ main {
 .hero-title {
     flex: 2;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 10px rgb(0, 135, 158, 0.2) ;
 }
 
@@ -84,7 +83,6 @@ main {
     font-size: 1.5rem;
 }
 /* End Header */
-
 
 
 /* Start Footer */
@@ -96,14 +94,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-map {
+.footer-logo {
+    width: 300px;
     padding: .2rem;
-    margin: 1rem;
-    border-radius: 1rem;
-}
-
-.quick-links {
-    display: flexbox;
+    margin: 1rem; 
 }
 
 .quick-links h4 {
@@ -126,7 +120,7 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     display: block;
     transition: background-color 300ms ease;
 }
@@ -137,6 +131,12 @@ footer {
     border-radius: 4px;
 }
 
+.footer-map {
+    padding: .2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
 .disclaimer {
     text-align: center;
     grid-column: span 3;
@@ -144,30 +144,22 @@ footer {
     font-weight: 500;
     width: 100%;
 }
-
-.footer-logo {
-    width: 300px;
-    padding: .2rem;
-    margin: 1rem;
-    
-}
 /* End Footer */
-
-
 
 
 /* Start Events Page */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 25px;
+    gap: 1.2rem;
+    margin: 1.5rem;
+    padding-top: 3rem;
 }
 
 .event-item {
     background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: .5rem;
     box-shadow: 2px 2px 10px rgba(0, 135, 158, 0.2);
 }
 
@@ -177,29 +169,27 @@ footer {
 }
 
 .event-item p {
-    margin: 5px 0;
+    margin: .3rem 0;
 }
 
 .event-item p, .event-item pre {
-    margin: 5px 0;
+    margin: .3rem 0;
 }
 
 .event-img img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: .5rem;
     box-shadow: 2px 2px 10px rgba(0, 135, 158, 0.2);
 }
 /* End Events Page */
-
-
 
 
 /* Start Concession Menu Page */
 .menu-images {
     display: flex;
     justify-content: space-around;
-    margin: 25px;
+    margin: 1.5rem;
 }
 
 .menu-images img {
@@ -237,11 +227,105 @@ footer {
 
 
 /* Start Location Page */
-.visitors {
+.visitor-info {
+    text-align: justify;   
+    padding: 2rem 0;
 }
-
 .map {
     width: 30rem;
     height: 30rem;
-    float: right;
 }
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.page-content h3 {
+    margin: 2rem;
+}
+/* End Location Page */
+
+
+
+
+/* Start Contact Us Page */
+.contact-us-page-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+#customer-service, #emergencies, #inquiries {
+    margin-bottom: 4rem;
+}
+
+.contact-form {
+    align-items: center;
+}
+
+#unique-h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 10px rgb(0, 135, 158, 0.2);
+}
+/* End Contact Us Page */
+
+
+
+
+/* Start Home Page */
+.home-widget {
+    position: relative;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+#welcome-message {
+    width: 80%;
+    height: auto;
+    text-justify: auto;
+    justify-self: center;
+    margin: 3rem 0;
+}
+
+#featured-shows-banner {
+    font-size: 2rem;
+    color: #00879E;
+    margin: 1rem 0;
+}
+
+.events-teaser {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-teaser .event-item {
+    object-fit: scale-down;
+    width: 50%;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.events-teaser h3 {
+    font-size: 2.5rem;
+}
+
+#button a {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    background-color: #00879E;
+    color: white;
+    border-radius: 4px;
+}
+
+#button a:hover {
+    transition: background-color 300ms ease;
+    background-color: #FFAB5B;
+}
+/* End Home Page */
