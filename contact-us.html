@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paul Jaghab">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="shortcut icon" href="images/small logo.png" type="image/.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,28 +15,26 @@
 
 <body>
     <header>
-        <a href="index.html" class="site-logo"><img src="./images/small logo.png" alt="Event Center Logo"></a>
-        <div class="flex-nav">
-            <div class="flexbox-nav"><a href="index.html">Home</a></div>  
-            <div class="flexbox-nav"><a href="events.html">Events</a></div>  
-            <div class="flexbox-nav"><a href="menu.html">Menu</a></div>  
-            <div class="flexbox-nav"><a href="location.html">Location</a></div>  
-            <div class="flexbox-nav"><a href="contact-us.html">Contact Us</a></div> 
-        </div>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="./images/small logo.png" alt="Event Center Logo"></a></div>
+            <div class="spacer"><br></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="events.html">Events</a></li>  
+                <li><a href="menu.html">Menu</a></li>  
+                <li><a href="location.html">Location</a></li>  
+                <li><a href="contact-us.html">Contact Us</a></li> 
+            </ul>
+        </nav>
         <div class="hero-section">
-            <div class="hero-title" id="unique-h1"><h1>RRRRRiiing....</h1><h2>Give Us a Call With Your Questions or Concerns</h2></div>           
+            <div class="hero-title" id="unique-h1"><h1>RRRRRiiing....</h1><h2>How To Reach Us With Your Questions Or Concerns</h2></div>           
             <div class="hero-img"><img src="./images/contact-us.jpg" alt="Girl with a phone"></div>
         </div>
     </header>
 
-    <main class="contact-us-page-content">
-        <div class="contact-info">
-            <div id="inquiries">
-                <h1>Contact Us</h1><br>
-                <h2>For general inquiries:</h2>
-                <p>Please submit your information in the provided form and we will reach out to you in about 3-5 years</p>
-                <p>...maybe.</p>
-            </div>
+    <main>
+        <h2 style="text-align: center;">Contact information</h2>
+        <div class="content">
             <div id="emergencies">
                 <h2>For security concerns or to report an incident, please dial:</h2>
                 <p>In case of an emergency dial 911,<br>otherwise, call: (805) 457-4992</p>
@@ -44,21 +43,30 @@
                 <h2>For all other inquiries, please give customer service a call at:</h2>
                 <p>(833) 324-7992</p>  
             </div>
+            <div id="inquiries">
+                <h2>For general inquiries:</h2>
+                <p>Please submit your information in the provided form and we will reach out to you in about 3-5 years</p>
+                <p>...maybe.</p>
+            </div>
         </div>
-        <div class="contact-form">
-            <form action="#">
-                <fieldset>
-                    <legend><h3>Contact Form</h3></legend>
-                    <label for="fname">First Name</label><br>
-                    <input type="text" id="fname" name="fname" value="Paul"><br>
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname" name="lname" value="Jaghab"><br>
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="message" rows="10" cols="50"></textarea><br>
-                    <input type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </div>
+        <form action="#">
+            <fieldset>
+                
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value="Ford"><br>
+                
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value="Prefect"><br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" value="p.adams@bbc.uk"><br>
+                
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" rows="5" cols="50"></textarea><br>
+                
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
     </main>
 
     <footer>

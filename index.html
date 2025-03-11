@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paul Jaghab">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="shortcut icon" href="images/small logo.png" type="image/.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
     <main>
         <p id="welcome-message">Welcome to the Atlantic Event Center, where unforgettable moments come to life! Nestled between Atlantic and Neptune Beach in Jacksonville, FL, we're proud to be your premier venue for live performances, from comedy and music to family-friendly shows and thrilling hockey games. Our mission is to bring people together with entertainment that resonates, all while offering a warm, welcoming atmosphere. Whether you're here for a night out or a special occasion, we can't wait to make it memorable for you!</p>
         
-        <h3 class="event-item" id="featured-shows-banner">Here's What's Right Around The Corner...</h3>
+        <h3 id="featured-shows-banner">Here's What's Right Around The Corner...</h3>
             
         <section class="home-widget">
                 <div class="event-item" id="1">
@@ -57,14 +58,14 @@
             </div>
         </section>
 
-        <section class="events-grid">
-            <div class="event-item events-teaser">
+        <section class="events-container">
+            <div class="event-item">
                 <h3>Upcoming Events</h3>
-                <p class="event-item">Don't wait until just before the show. Keep coming back for regular updates and make sure to get the tickets you want before someone else gets them first!</p>
-                <p class="events-teaser" id="button"><a href="events.html">View All Events</a></p>
+                <p>Don't wait until just before the show. Keep coming back for regular updates and make sure to get the tickets you want before someone else gets them first!</p>
             </div>
-            <div class="event-img">
+            <div class="event-item">
                 <img src="./images/kane.png" alt="Kane Brown">
+                <button href="events.html">View All Events</button>
             </div>
         </section>
     </main>
