@@ -110,6 +110,7 @@ footer {
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 1rem;
 }
 .footer-logo {
     max-width: 300px;
@@ -135,6 +136,7 @@ img {
     list-style: none;
     padding: 0;
     width: 10rem;
+    line-height: 1rem;
 }
 .quick-links li {
     margin: .6rem 0;
